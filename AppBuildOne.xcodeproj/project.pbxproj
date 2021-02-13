@@ -12,6 +12,7 @@
 		CED5513025D5CA16007EA97E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED5512E25D5CA16007EA97E /* Main.storyboard */; };
 		CED5513225D5CA19007EA97E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED5513125D5CA19007EA97E /* Assets.xcassets */; };
 		CED5513525D5CA19007EA97E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED5513325D5CA19007EA97E /* LaunchScreen.storyboard */; };
+		CED5513F25D73B01007EA97E /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5513E25D73B01007EA97E /* secondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CED5513125D5CA19007EA97E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED5513425D5CA19007EA97E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED5513625D5CA19007EA97E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED5513E25D73B01007EA97E /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				CED5512A25D5CA16007EA97E /* AppDelegate.swift */,
 				CED5512C25D5CA16007EA97E /* ViewController.swift */,
 				CED5512E25D5CA16007EA97E /* Main.storyboard */,
+				CED5513E25D73B01007EA97E /* secondViewController.swift */,
 				CED5513125D5CA19007EA97E /* Assets.xcassets */,
 				CED5513325D5CA19007EA97E /* LaunchScreen.storyboard */,
 				CED5513625D5CA19007EA97E /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED5512D25D5CA16007EA97E /* ViewController.swift in Sources */,
+				CED5513F25D73B01007EA97E /* secondViewController.swift in Sources */,
 				CED5512B25D5CA16007EA97E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

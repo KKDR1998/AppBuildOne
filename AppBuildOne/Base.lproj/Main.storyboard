@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aVm-i9-Twc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="ay1-Wm-gDU">
             <objects>
-                <viewController id="ZoZ-Jc-7re" sceneMemberID="viewController">
+                <viewController id="ZoZ-Jc-7re" customClass="secondViewController" customModule="AppBuildOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Ls-6w-Fea">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,14 +29,48 @@
         <!--View Controller-->
         <scene sceneID="WUf-eP-8ps">
             <objects>
-                <viewController id="kQf-eD-leg" sceneMemberID="viewController">
+                <viewController id="kQf-eD-leg" customClass="ViewController" customModule="AppBuildOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jY1-it-uYr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4K-0Q-jBu">
+                                <rect key="frame" x="16" y="102" width="343" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJU-gk-gGb">
+                                <rect key="frame" x="16" y="534" width="78" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About ACM">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ACM:" destination="kQf-eD-leg" eventType="touchUpInside" id="WRt-Lp-udq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcy-ZG-uNQ">
+                                <rect key="frame" x="248" y="534" width="111" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About UHWO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ACM:" destination="kQf-eD-leg" eventType="touchUpInside" id="zIc-bU-8zl"/>
+                                    <action selector="UHWO:" destination="kQf-eD-leg" eventType="touchUpInside" id="ESj-U4-7ed"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ii4-24-tbO"/>
                     </view>
                     <navigationItem key="navigationItem" id="wSR-u5-ZkZ"/>
+                    <connections>
+                        <outlet property="uhwoInfo" destination="o4K-0Q-jBu" id="4Qz-wc-n6B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0AC-6m-jim" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,11 +94,11 @@
             </objects>
             <point key="canvasLocation" x="-592" y="49"/>
         </scene>
-        <!--Item 1-->
+        <!--Info-->
         <scene sceneID="aWl-NU-0uL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BaC-7x-XAx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="O70-rU-gqd"/>
+                    <tabBarItem key="tabBarItem" title="Info" id="O70-rU-gqd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SHZ-Jk-b43">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -79,11 +113,11 @@
             </objects>
             <point key="canvasLocation" x="360.80000000000001" y="-284.70764617691157"/>
         </scene>
-        <!--Item 2-->
+        <!--Calculator-->
         <scene sceneID="6Ql-Xs-eZU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rNJ-cV-3Cg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ayA-KM-aah"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" id="ayA-KM-aah"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j2u-qd-leE">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
