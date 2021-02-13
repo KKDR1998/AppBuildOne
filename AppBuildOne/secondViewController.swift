@@ -10,7 +10,15 @@ import UIKit
 
 class secondViewController: UIViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var Answer: UILabel!
+    var a = 5
+    var b = 10
+    
+   
+   
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -26,5 +34,32 @@ class secondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func Calculate(_ sender: Any)
+    {
+        let c = a + b
+        Answer.text = String (c)
+        
+        if a < b {
+            view.backgroundColor = .green
+            
+        } else {
+            view.backgroundColor = .red
 
+            
+        }
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
